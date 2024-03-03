@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pretty.png'); /* Replace 'background.jpg' with your image file */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: 100vh;
+     display:flex;
+     justify-content: center;
+    align-items: center;
+     position: relative;
+  }
+  .number {
+          cursor: pointer;
+          font-size: 24px;
+          padding: 10px;
+          margin: 5px;
+          border: 2px solid #000;
+          display: inline-block;
+      }
+
+  #imagePopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    width:500px; 
+    height:700px;
+  }
+
+  #popupImage {
+  max-width: 100%;
+  max-height:100%;
+ }
+
+
+  #closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  .container {
+          text-align: center;
+          position: absolute;
+          bottom: 0px; /* Adjust as needed */
+          left: 30px;
+          right: 0;
+      }
+
+      .btn {
+          padding: 10px 20px;
+          margin: 10px;
+          font-size: 18px;
+          cursor: pointer;
+          background-color: #9c876a;
+          color: #fff;
+          border: none;
+          border-radius: 10px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+          align-items: center;
+          position: absolute;
+          bottom: 270px;
+          right: 680px;
+      }
+
+      .btn:hover {
+          background-color: #c4b791;
+      }
